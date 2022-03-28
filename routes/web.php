@@ -33,7 +33,10 @@ Route::post('/store/shift',[foreignKeyController::class, 'shiftStore'])->name('s
 Route::get('/view/shift',[foreignKeyController::class, 'shiftView'])->name('view.shift');
 
 Route::get('/edit/shift/{id}',[foreignKeyController::class, 'shiftEdit'])->name('edit.shift');
+
 Route::post('/update/shift',[foreignKeyController::class, 'shiftUpdate'])->name('shift.update');
+
+Route::get('/delete/shift/{id}',[foreignKeyController::class, 'shiftDelete'])->name('delete.shift');
 /*Shift end */
 
 

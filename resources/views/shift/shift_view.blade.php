@@ -34,7 +34,7 @@
                             <td>{{$row->shift_name}}</td>
                             <td>
                                 <a href="{{route('edit.shift', $row->id)}}" class="btn btn-success">Edit</a>
-                                <a href="" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete???');">Delete</a>
+                                <a href="{{route('delete.shift', $row->id)}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete???');">Delete</a>
                             </td>
                           </tr>
                         @endforeach

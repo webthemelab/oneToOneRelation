@@ -187,6 +187,12 @@ class foreignKeyController extends Controller
 
 
     }//end method
+    public function shiftDelete($id){
+
+        $shift= Shift::find($id);
+        $shift->delete();
+        return redirect('/view/shift')->with('sms', 'Shift updated successfully');
+    }//end method
 
 
 
